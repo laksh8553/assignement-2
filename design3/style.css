@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+    
+}
+
+/* LEFT */
+
+.left {
+    width: 50%;
+    background: #f3f3f3;
+    padding: 45px 60px;
+    position: relative;
+    overflow: hidden;
+}
+
+.left-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-nav h1 {
+    font-size: 4vw;
+    color: #08261f;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.search-box {
+    width: 360px;
+    height: 60px;
+    background: #ebebeb;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 0 22px;
+}
+
+.search-box i {
+    font-size: 24px;
+    color: #666;
+}
+
+.search-box input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 18px;
+    font-family: inherit;
+}
+
+.classification-title {
+    position: absolute;
+    left: 10px;
+    top: 60%;
+    transform: translateY(-60%) rotate(-90deg);
+}
+
+.classification-title h2 {
+    font-size: 5vw;
+    font-family: 'Cormorant Garamond', serif;
+    color: #0b2b24;
+    font-weight: 400;
+    letter-spacing: 2px;
+    white-space: nowrap;
+    line-height: 1;
+}
+
+.info-list {
+    width: 420px;
+    margin-top: 110px;
+    margin-left: 230px;
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    padding: 28px 0;
+    border-bottom: 1px solid #d8d8d8;
+}
+
+.dot {
+    min-width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #d3483e;
+    margin-top: 12px;
+}
+
+.info-item h3 {
+    font-size: 18px;
+    color: #111;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.info-item p {
+    font-size: 17px;
+    color: #444;
+    line-height: 1.5;
+}
+
+/* CENTER */
+
+.center {
+    position: absolute;
+    left: 50%;
+    top: 52%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.glass-box img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    filter: drop-shadow(0px 25px 35px rgba(0, 0, 0, 0.35));
+}
+
+/* RIGHT */
+
+.right {
+    width: 50%;
+    background: linear-gradient(135deg, #b61f16, #cf3f2e);
+    padding: 40px 70px;
+    color: white;
+}
+
+.right-nav {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.right-nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.content {
+    margin-top: 140px;
+    margin-left: 180px;
+}
+
+.content h1 {
+    font-size: 5vw;
+    line-height: 0.95;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+}
+
+.details {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.size-box {
+    text-align: center;
+}
+
+.size-box i {
+    font-size: 70px;
+}
+
+.size-box p {
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+.line {
+    width: 1px;
+    height: 140px;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.extra-info {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.extra-info div {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.extra-info i {
+    font-size: 28px;
+}
+
+.extra-info span {
+    font-size: 20px;
+}
+
+.content h2 {
+    margin-top: 60px;
+    font-size: 4vw;
+    color: #f4d18f;
+}
+
+.toggle-group {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.toggle-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.toggle {
+    width: 42px;
+    height: 24px;
+    background: white;
+    border-radius: 50px;
+    position: relative;
+}
+
+.toggle::before {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background: #d96b5c;
+    border-radius: 50%;
+    left: 3px;
+    top: 3px;
+}
+
+.toggle-item span {
+    font-size: 18px;
+}
+
+button {
+    margin-top: 45px;
+    padding: 18px 45px;
+    border: none;
+    border-radius: 15px;
+    background: #e7c88f;
+    color: #111;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    background: #f3d9a9;
+}
