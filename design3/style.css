@@ -19,8 +19,6 @@ body {
     
 }
 
-/* LEFT */
-
 .left {
     width: 50%;
     background: #f3f3f3;
@@ -86,35 +84,35 @@ body {
 
 .info-list {
     width: 420px;
-    margin-top: 110px;
+    margin-top: 50px;
     margin-left: 230px;
 }
 
 .info-item {
     display: flex;
     align-items: flex-start;
-    gap: 18px;
-    padding: 28px 0;
+    gap: 15px;
+    padding: 25px 0;
     border-bottom: 1px solid #d8d8d8;
 }
 
 .dot {
-    min-width: 10px;
-    height: 10px;
+    min-width: 8px;
+    height: 8px;
     border-radius: 50%;
     background: #d3483e;
     margin-top: 12px;
 }
 
 .info-item h3 {
-    font-size: 18px;
+    font-size: 15px;
     color: #111;
     margin-bottom: 8px;
     font-weight: 600;
 }
 
 .info-item p {
-    font-size: 17px;
+    font-size: 14px;
     color: #444;
     line-height: 1.5;
 }
@@ -192,7 +190,7 @@ body {
 
 .size-box p {
     margin-top: 10px;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .line {
@@ -214,21 +212,21 @@ body {
 }
 
 .extra-info i {
-    font-size: 28px;
+    font-size: 22px;
 }
 
 .extra-info span {
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .content h2 {
-    margin-top: 60px;
-    font-size: 4vw;
+    margin-top: 20px;
+    font-size: 40px;
     color: #f4d18f;
 }
 
 .toggle-group {
-    margin-top: 35px;
+    margin-top: 15px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -241,18 +239,18 @@ body {
 }
 
 .toggle {
-    width: 42px;
-    height: 24px;
+    width: 35px;
+    height: 22px;
     background: white;
     border-radius: 50px;
     position: relative;
 }
 
-.toggle::before {
+.toggle:before {
     content: "";
     position: absolute;
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
     background: #d96b5c;
     border-radius: 50%;
     left: 3px;
@@ -260,7 +258,7 @@ body {
 }
 
 .toggle-item span {
-    font-size: 18px;
+    font-size: 12px;
 }
 
 button {
